@@ -1,3 +1,7 @@
 BeautifulSoup4
-
 requests
+validators
+urllib3
+configparser
+parse
+argparse
