@@ -26,7 +26,7 @@ def get_request(url, path, port, verbose, headers=[], tags=[]):
     print("User Agent you use : ", choiceUA)
     print("\n")
         
-    headers2 = ['Pragma: no-cache', 'Accept: */*', 'User-Agent: ',choiceUA, 'Connection: close', 'Host: '+url]
+    headers2 = [f'Pragma: no-cache', 'Accept: */*', 'User-Agent: {choiceUA}', 'Connection: close', 'Host: '+url]
     DEF = []
 
     for h in headers2:
@@ -187,7 +187,7 @@ def get_request(url, path, port, verbose, headers=[], tags=[]):
 
 # BUILD HTTP REQUEST
 def doRequest(method, url, path, port, verbose, headers=[]):
-    headers2 = [f'Pragma: no-cache', 'Accept: */*', 'User-Agent: ', choiceUA, 'Connection: close', 'Host: '+url]
+    headers2 = [f'Pragma: no-cache', 'Accept: */*', 'User-Agent: {choiceUA}', 'Connection: close', 'Host: '+url]
     DEF = []
 
     for h in headers2:
