@@ -11,7 +11,7 @@ solo coder (tangerang)
 
 19 y/o
 
-usage = python3 main.py -u <URL> -v
+usage = python3 main.py -u (URL) -v
   
   create Sunday 28/11/2021
 
