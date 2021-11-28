@@ -14,3 +14,7 @@ solo coder (tangerang)
 usage = python3 main.py -u <URL> -v
   
   create Sunday 28/11/2021
+
+Kanao Wangy wangy 🗿
+  
+![Gambar Kanao](https://i.pinimg.com/736x/76/fb/5d/76fb5d02a2c15b725fd3a45d98ac1690.jpg)
