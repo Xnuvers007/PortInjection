@@ -187,6 +187,33 @@ def get_request(url, path, port, verbose, headers=[], tags=[]):
 
 # BUILD HTTP REQUEST
 def doRequest(method, url, path, port, verbose, headers=[]):
+    User_Agents = [
+
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36 Edg/96.0.1054.34',
+
+        'Mozilla/5.0 (Linux; Android 11; SM-A205G Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.120 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/345.0.0.34.118;]',
+
+        'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4688.2 Safari/537.36 OPR/83.0.4246.0 (Edition developer),gzip(gfe)',
+
+        'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.42 Safari/537.36',
+
+        'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36',
+
+        'Mozilla/5.0 (Linux; Android 11; motorola one vision Build/RSAS31.Q1-48-36-15; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.45 Mobile Safari/537.36',
+
+        'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML%2C like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)', #The Best UA
+
+        'Mozilla/5.0 (iPhone; CPU iPhone OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12F70 Safari/600.1.4 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+
+        'Mozilla/5.0 (Linux; U; Android 9; zh-cn; MI 8 UD Build/PKQ1.180729.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.141 Mobile Safari/537.36 XiaoMi/MiuiBrowser/11.5.12',
+
+        'Mozilla/5.0 (Linux; U; Android 8.0.0; ru-ru; MI 6 Build/OPR1.170623.027) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.128 Mobile Safari/537.36 XiaoMi/MiuiBrowser/9.5.14',
+
+        'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:86.0) Gecko/20100101 Firefox/86.0',
+
+    ]
+
+    choiceUA = random.choice(User_Agents)
     headers2 = [f'Pragma: no-cache', 'Accept: */*', 'User-Agent: {choiceUA}', 'Connection: close', 'Host: '+url]
     DEF = []
 
