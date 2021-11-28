@@ -47,8 +47,13 @@ usage = python3 main.py -u (URL) -v
 
 # NB
 
-tested On Windows 10 x64
-tested on Kali Linux 
+<center>
+  
+  <p>tested On Windows 10 x64
+    
+  <p>tested on Kali Linux
+    
+</center>
 
 # Ending
   
