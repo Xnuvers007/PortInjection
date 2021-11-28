@@ -27,7 +27,15 @@ solo coder (tangerang)
 
 19 y/o
 
+termux : apt upgrade ; apt update
+
+kali linux : sudo apt-get upgrade ; sudo apt-get update
+
+pkg install python3
+
 git clone https://github.com/Xnuvers007/PortInjection
+
+pip install -r requirements.txt
 
 cd PortInjection
 
