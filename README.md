@@ -1,7 +1,18 @@
 ![Top Lang](https://img.shields.io/github/languages/top/xnuvers007/PortInjection)
 ![Code Size](https://img.shields.io/github/languages/code-size/Xnuvers007/PortInjection)
 ![Repo Size](https://img.shields.io/github/repo-size/xnuvers007/portinjection)
+![Issues](https://img.shields.io/github/issues/xnuvers007/PortInjection)
+![Closed Issues](https://img.shields.io/github/issues-closed/Xnuvers007/PortInjection)
+![License](https://img.shields.io/github/license/xnuvers007/PortInjection)
+![Followers](https://img.shields.io/github/followers/xnuvers007?style=social)
+![Subscriber](https://img.shields.io/youtube/channel/subscribers/UCqmsJTrSUiP14M9rrhS3jYg?style=social)
 
+![Last Commit](https://img.shields.io/github/last-commit/xnuvers007/PortInjection)
+![Contributors](https://img.shields.io/github/contributors/xnuvers007/PortInjection)
+
+![Release Date](https://img.shields.io/github/release-date/xnuvers007/PortInjection)
+
+# Xnuvers007
 
 # PortInjection
 this is tools hacking for scan vuln in port web, happy using
