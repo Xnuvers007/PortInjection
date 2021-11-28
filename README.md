@@ -27,11 +27,15 @@ solo coder (tangerang)
 
 19 y/o
 
+# installation
+
 termux : apt upgrade ; apt update
 
 kali linux : sudo apt-get upgrade ; sudo apt-get update
 
-pkg install python3
+termux : pkg install python3
+
+kali linux : sudo apt-get install python3
 
 git clone https://github.com/Xnuvers007/PortInjection
 
@@ -40,6 +44,13 @@ pip install -r requirements.txt
 cd PortInjection
 
 usage = python3 main.py -u (URL) -v
+
+# NB
+
+tested On Windows 10 x64
+tested on Kali Linux 
+
+# Ending
   
   create Sunday 28/11/2021
 
