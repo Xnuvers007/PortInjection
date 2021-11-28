@@ -10,7 +10,7 @@
 ![Last Commit](https://img.shields.io/github/last-commit/xnuvers007/PortInjection)
 ![Contributors](https://img.shields.io/github/contributors/xnuvers007/PortInjection)
 
-![Release Date](https://img.shields.io/github/release-date/xnuvers007/PortInjection)
+
 
 # Xnuvers007
 
