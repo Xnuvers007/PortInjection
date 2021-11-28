@@ -1,3 +1,8 @@
+![Top Lang](https://img.shields.io/github/languages/top/xnuvers007/PortInjection)
+![Code Size](https://img.shields.io/github/languages/code-size/Xnuvers007/PortInjection)
+![Repo Size](https://img.shields.io/github/repo-size/xnuvers007/portinjection)
+
+
 # PortInjection
 this is tools hacking for scan vuln in port web, happy using
 
