@@ -27,6 +27,10 @@ solo coder (tangerang)
 
 19 y/o
 
+git clone https://github.com/Xnuvers007/PortInjection
+
+cd PortInjection
+
 usage = python3 main.py -u (URL) -v
   
   create Sunday 28/11/2021
